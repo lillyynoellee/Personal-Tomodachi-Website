@@ -1,0 +1,186 @@
+body {
+    background-image: radial-gradient(#FDA521 20%, transparent 20%), radial-gradient(#FDA521 20%, transparent 20%);
+    background-color: #FFC670;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    position: relative;
+    margin: 2%;
+    font-family: 'Paytone One';
+  }
+
+  .photo{
+    padding-top: 6%;
+    padding-left: 4%;
+    height: 500px;
+  }
+
+  .photo-box {
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    margin: auto; /* Add margin around the box */
+    margin-top: 5%;
+    padding: 20px; 
+    border-radius: 5%;
+    position: relative;
+    box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+}
+
+.date-box {
+    width: 200px;
+    height: 60px;
+    background-color: whitesmoke;
+    margin-top: -3%;
+    margin-left: 65%;
+    padding: 20px;
+    border-radius: 15%;
+    z-index: 100000;  /* allows this div to hover over the "photo-box" div */
+    position:absolute;
+    box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    font-size: 40px;
+    color: #F47A1F;
+}
+
+.day-box {
+  width: 200px;
+  height: 60px;
+  background-color: whitesmoke;
+  margin-top: -2%;
+  margin-left: 45%;
+  padding: 20px;
+  border-radius: 15%;
+  z-index: 100000;  /* allows this div to hover over the "photo-box" div */
+  position:absolute;
+  text-align: center;
+  font-size: 50px;
+  color: #2BA2C8;
+}
+
+.desc-box {
+  width: 900px;
+  height: 400px;
+  background-color: white;
+  margin: auto; /* Add margin around the box */
+  margin-top: 5%;
+  padding: 20px; 
+  border-radius: 7%;
+  position: relative;
+  box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  text-align: center;
+  font-size: 50px;
+  color: #03A600;
+}
+
+.socials-box {
+  width: 300px;
+  height: 60px;
+  background-color: white;
+  margin-top: 4%;
+  padding: 20px;
+  border-radius: 12%;
+  box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  /* color: #F47A1F; */
+}
+
+.socials-text{
+  color: #F47A1F;
+  font-size: 30px;
+  padding-left: 2%;
+  margin-top: 3%;
+  transition: all 0.3s ease-in; 
+}
+
+.socials-icon:hover {
+  color: #000;
+}
+
+.socials-icon{
+  font-size: 30px;
+  top: 4%;
+  padding-left: 5%;
+}
+
+.left-circle {
+  width: 120px; /* You can set your desired width */
+  height: 120px; /* You can set your desired height */
+  background-color: white; /* You can set your desired background color */
+  border-radius: 50%;
+  margin: auto;
+  z-index: 100000;  /* allows this div to hover over the "photo-box" div */
+  position:absolute;
+  margin-left: 5%;
+  margin-top: 15%;
+  box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+}
+
+.left-circle:hover{
+  animation: bouncing 0.5s .1s;
+}
+
+.right-circle {
+  width: 120px; /* You can set your desired width */
+  height: 120px; /* You can set your desired height */
+  background-color: white; /* You can set your desired background color */
+  border-radius: 50%;
+  margin: auto;
+  z-index: 100000;  /* allows this div to hover over the "photo-box" div */
+  position:absolute;
+  margin-left: 88%;
+  margin-top: 15%;
+  box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 10px 28px 0px rgba(0,0,0,0.75);
+}
+
+.right-circle:hover{
+  animation: bouncing 0.5s .1s;
+}
+
+/* why do this??? why triangle?? */
+.left-arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 70px solid #F47A1F;
+  border-radius: 10%;
+  left: 12%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 70px solid #F47A1F;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  right: 13%;
+  transform: translateY(-50%);
+}
+
+@keyframes bouncing {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+.mySlides {
+  display:none;
+}
